@@ -10,18 +10,20 @@
 
 <body>
     <div class="container-home">
-        <h1>Vulcões</h1>
-        <nav>
-            <li><a href="#">Oque é?</a></li>
-            <li><a href="#">Formação</a></li>
-            <li><a href="#">Estrutura</a></li>
-            <li><a href="#">Tipos</a></li>
-            <li><a href="#">Erupção</a></li>
-            <li><a href="#">Curiosidades</a></li>
-        </nav>
-        <main class="">
+        <div class="container-nav">
+            <h1>Vulcões</h1>
+            <nav>
+                <li><a href="#introducao">Oque é?</a></li>
+                <li><a href="#form">Formação</a></li>
+                <li><a href="#Part">Estrutura</a></li>
+                <li><a href="#tipos">Tipos</a></li>
+                <li><a href="#erup">Erupção</a></li>
+                <li><a href="#vul">Vulcões e terremotos</a></li>
+            </nav>
+        </div>
+        <main class="container-content">
             <div class="content">
-                <h1>O que é um vulcão?</h1>
+                <h1 id="introducao">O que é um vulcão?</h1>
                 <p>
                     Os vulcões são fenômenos naturais que se localizam em áreas onde as placas tectônicas convergem-se,
                     ou seja, entram em contato. Esses fenômenos, oriundos do interior da crosta terrestre, liberam um
@@ -30,13 +32,16 @@
                 </p>
             </div>
             <div class="content">
-                <h1>Como se forma um vulcão?</h1>
+                <h1 id="form">Como se forma um vulcão?</h1>
                 <p>
                     A maioria dos vulcões possui um formato bem similar: montanhas com formato em cone e uma abertura no
                     cume, o ponto mais alto da estrutura. Contudo, vulcões e montanhas podem ter processos de formação
                     geológica diferentes, apesar de que um vulcão é uma montanha, nem toda montanha é um vulcão.
                 </p>
-                <img src="./imagens/vulcao-indonesia.jpg" alt="vulcao-indonesia">
+                <figure>
+                    <img src="./imagens/vulcao-indonesia.jpg" alt="vulcao-indonesia">
+                    <figcaption>Vulcão Anak Krakatau, Indonésia</figcaption>
+                </figure> 
                 <p>
                     Vulcões formam-se por meio do acúmulo de magma no interior da Terra, em áreas de contato das placas
                     tectônicas. Essas placas estão sobre o magma, parte viscosa do manto responsável pelo movimento
@@ -62,24 +67,30 @@
                 </p>
             </div>
             <div class="content">
-                <h1>Partes do vulcão</h1>
+                <h1 id="Part">Partes do vulcão</h1>
                 <p>
                     Apesar de possuírem formas variadas e ocorrerem em diferentes áreas do globo, os vulcões possuem uma
                     estrutura comum.
                 </p>
-                <img src="./imagens/diferentes-vulcoes.jpg" alt="diferentes-vulcoes">
+                <figure>
+                    <img src="./imagens/diferentes-vulcoes.jpg" alt="diferentes-vulcoes">
+                    <figcaption>Diferentes vulcões, mas todos com uma estrutura comum.</figcaption>
+                </figure> 
+    
                 <p>Os vulcões são compostos de quatro partes:</p>
-                <ul>
-                    <li>Cratera: cume do vulcão pelo qual o material é expelido durante a atividade vulcânica;</li>
-                    <li>Chaminé: passagem pela qual o magma sobe da câmara magmática até a chaminé;</li>
-                    <li>Cone: estrutura geológica dos vulcões;</li>
-                    <li>
-                        Câmara magmática: reservatório, abaixo do vulcão, de rocha derretida e magma, oriundos do manto.
-                        Nesse ponto, quando há pressão exercida do manto em relação às rochas, o magma é expulso,
-                        passando pela chaminé até a cratera, atingindo a superfície na crosta, seja no continente, seja
-                        no oceano.
-                    </li>
-                </ul>
+                <div class="container-list">
+                    <ul>
+                        <li><b>Cratera</b>: cume do vulcão pelo qual o material é expelido durante a atividade vulcânica;</li>
+                        <li><b>Chaminé</b>: passagem pela qual o magma sobe da câmara magmática até a chaminé;</li>
+                        <li><b>Cone</b>: estrutura geológica dos vulcões;</li>
+                        <li>
+                            <b>Câmara magmática</b>: reservatório, abaixo do vulcão, de rocha derretida e magma, oriundos do manto.
+                            Nesse ponto, quando há pressão exercida do manto em relação às rochas, o magma é expulso,
+                            passando pela chaminé até a cratera, atingindo a superfície na crosta, seja no continente, seja
+                            no oceano.
+                        </li>
+                    </ul>
+                </div>
 
                 <p>
                     Câmara magmática: reservatório, abaixo do vulcão, de rocha derretida e magma, oriundos do manto.
@@ -89,7 +100,7 @@
                 </p>
             </div>
             <div class="content">
-                <h1>Tipos de vulcão</h1>
+                <h1 id="tipos">Tipos de vulcão</h1>
 
                 <p>
                     Cada vulcão tem a sua peculiaridade de acordo com seu grau de atividade. No entanto, a divisão dos
@@ -100,41 +111,45 @@
 
                 <p>Para fins didáticos, os vulcões são classificados em três tipos:</p>
 
-                <ol>
-                    <li>
-                        Vulcão-escudo: é capaz de expelir enormes quantidades de material magmático que percorrem longas
-                        distâncias, formando uma larga montanha remetente a um escudo.
-                    </li>
-                    <li>Cone de escória: é o mais comum, apresenta menores dimensões, e o magma expelido é de baixa
-                        viscosidade.
-                    </li>
-                    <li>
-                        Estratovulcões: possui o formato de um cone, sendo, portanto, ingrime. Mantém-se em longa
-                        atividade, sua
-                        lava expelida é de alta viscosidade e, por vezes, ascende-se ao exterior do vulcão de forma
-                        violenta.
-                    </li>
-                    <li>Caldeira: possuiu um grande diâmetro, entre 15 km2 e 100 km2, podendo ser formado em horas ou
-                        dias. É
-                        caracterizado pela saída violenta de gases do interior do planeta.
-                    </li>
-                    <li>
-                        Vulcão submarino: encontra-se no fundo oceânico e é responsável pela formação de um novo
-                        assoalho.
-                    </li>
-                </ol>
+                <div class="container-list">
+                    <ol>
+                        <li>
+                            <b>Vulcão-escudo</b>: é capaz de expelir enormes quantidades de material magmático que percorrem longas
+                            distâncias, formando uma larga montanha remetente a um escudo.
+                        </li>
+                        <li><b>Cone de escória</b>: é o mais comum, apresenta menores dimensões, e o magma expelido é de baixa
+                            viscosidade.
+                        </li>
+                        <li>
+                            <b>Estratovulcões</b>: possui o formato de um cone, sendo, portanto, ingrime. Mantém-se em longa
+                            atividade, sua
+                            lava expelida é de alta viscosidade e, por vezes, ascende-se ao exterior do vulcão de forma
+                            violenta.
+                        </li>
+                        <li><b>Caldeira</b>: possuiu um grande diâmetro, entre 15 km2 e 100 km2, podendo ser formado em horas ou
+                            dias. É
+                            caracterizado pela saída violenta de gases do interior do planeta.
+                        </li>
+                        <li>
+                            <b>Vulcão submarino</b>: encontra-se no fundo oceânico e é responsável pela formação de um novo
+                            assoalho.
+                        </li>
+                    </ol>
+                </div>
                 <p>Classificação quanto a sua atividade:</p>
-                <ul>
-                    <li>→ Ativo: apresenta atividade, ou seja, demonstra sinais de instabilidade.</li>
-                    <li>
-                        → Dormente: não está em atividade, contudo, pode ser que, em um dado momento, volte a apresentar
-                        sinais de instabilidade.
-                    </li>
-                    <li>→ Extinto: possivelmente não apresentará sinais de atividade.</li>
-                </ul>
+                <div class="container-list">
+                    <ul>
+                        <li>→ <b>Ativo</b>: apresenta atividade, ou seja, demonstra sinais de instabilidade.</li>
+                        <li>
+                            → <b>Dormente</b>: não está em atividade, contudo, pode ser que, em um dado momento, volte a apresentar
+                            sinais de instabilidade.
+                        </li>
+                        <li>→ <b>Extinto</b>: possivelmente não apresentará sinais de atividade.</li>
+                    </ul>
+                </div>
             </div>
             <div class="content">
-                <h1>Como ocorre uma erupção</h1>
+                <h1 id="erup">Como ocorre uma erupção</h1>
                 <p>
                     As forças internas da Terra provocam a erupção vulcânica. O movimento das placas é estimulado pela
                     agitação do material magmático, provocada pelas altas temperaturas do interior da Terra. A
@@ -145,7 +160,7 @@
                 </p>
             </div>
             <div class="content">
-                <h1>Vulcões e terremotos</h1>
+                <h1 id="vul">Vulcões e terremotos</h1>
                 <p>
                     Você sabia que há uma relação entre terremotos e a distribuição dos vulcões? E você sabe o que são
                     terremotos? Vamos entender. Terremoto é, de maneira geral, um abalo sísmico, ou seja, tremores
@@ -174,7 +189,7 @@
                 </p>
             </div>
         </main>
-        <div class="go-form">
+        <div class="container-content go-form">
             <a href="#">Ir para o formulário</a>
         </div>
     </div>
