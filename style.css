@@ -10,30 +10,25 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.container-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-nav h1 {
-    color: #fff;
+.titulo-home {
+    text-align: center;
     padding-bottom: 2rem;
+    color: #fff;
 }
-
 nav {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav li {
     list-style: none;
-    font-size: 1.25rem;
     font-weight: bold;
 }
 
 nav li a {
+    flex: 1;
     text-decoration: none;
     color: #fff;
 }
@@ -63,6 +58,15 @@ p {
     margin-left: 2rem;
 }
 
+.container-img {
+    flex: 1 1 100px;
+    max-width: 600px;
+}
+
+.container-img img {
+    width: 100%;
+}
+
 figure {
     display: flex;
     align-items: center;
@@ -80,7 +84,7 @@ figcaption {
     justify-content: flex-end;
     gap: 1rem;
     font-size: 1.25rem;
-} 
+}
 
 .go-form a {
     background-color: rgb(255, 25, 25);
