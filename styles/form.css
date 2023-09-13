@@ -7,6 +7,7 @@
 body {
     background: rgb(255, 0, 0);
     background: linear-gradient(121deg, rgba(255, 0, 0, 1) 17%, rgba(255, 149, 0, 1) 78%, rgba(255, 201, 0, 1) 100%);
+    color: #fff;
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -18,7 +19,7 @@ body {
 .container-questoes {
     width: 600px;
     height: auto;
-    background-color: rgba(208, 208, 255, 0.486);
+    background-color: #d0c8c842;
     font-weight: bold;
     border-radius: 8px 60px 8px 60px;
 }
@@ -26,6 +27,9 @@ body {
 header {
     font-size: 2rem;
     margin: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 hr {
@@ -52,9 +56,9 @@ hr {
 
 .btn {
     background: transparent;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     padding: 15px;
-    color: #000;
+    color: #fff;
     text-align: left;
     cursor: pointer;
     font-weight: bold;
@@ -109,10 +113,12 @@ hr {
 
 .verdadeira {
     background: green;
+    border-color: green;
 }
 
 .falsa {
     background: red;
+    border-color: red;
 }
 
 #email {

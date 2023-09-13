@@ -96,6 +96,7 @@ const alternativasBtns = document.querySelector('.altenativas-btns');
 const proxBtn = document.querySelector('#prox');
 const numQuestao = document.querySelector('#ate-questao');
 const btnEmail = document.querySelector('#email');
+const mostrarPontos = document.querySelector('#qtd-pontos');
 
 let indexQuestaoAtual = 0;
 let pontos = 0;
@@ -105,6 +106,7 @@ function iniciarQuiz() {
     pontos = 0;
     proxBtn.innerText = 'Próximo';
     mostrarQuestao();
+    mostrarPontos.innerText = `${pontos} ponto(s)`;
 }
 
 function mostrarQuestao() {
@@ -139,13 +141,14 @@ function alterSelect(e) {
 
     if (eVdd) {
         btnSelect.classList.add('verdadeira');
-        pontos++
+        pontos++;
+        mostrarPontos.innerText = `${pontos} ponto(s)`;
     } else {
         btnSelect.classList.add('falsa');
     }
 
     Array.from(alternativasBtns.children).forEach(button => {
-        if(button.dataset.resposta === 'true'){
+        if (button.dataset.resposta === 'true') {
             button.classList.add('verdadeira');
         }
         button.disabled = true;
