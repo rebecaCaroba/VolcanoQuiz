@@ -11,9 +11,15 @@ body {
 }
 
 .titulo-home {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 2rem;
     color: #fff;
+}
+
+.titulo-home img {
+    width: 120px;
 }
 
 nav {
@@ -38,7 +44,7 @@ nav li a:hover {
     text-decoration: underline;
 }
 
-.container-content {
+.container-conteudo {
     background: hsla(0, 16%, 89%, 0.443);
     margin: 2rem auto;
     max-width: 1200px;
@@ -87,10 +93,13 @@ figcaption {
     font-size: 1.25rem;
 }
 
-.go-form a {
+.go-form button {
     background-color: rgb(255, 25, 25);
     padding: 0.650rem;
     text-decoration: none;
     color: #fff;
     border-radius: 8px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
 }
