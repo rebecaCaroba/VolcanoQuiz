@@ -32,7 +32,7 @@ const questoesArray = [
             { texto: 'Pelo atividade tectônica das placas da crosta terrestre', resposta: true },
             { texto: 'Pela erosão causada pelo vento e pela água.', resposta: false },
             { texto: 'Pela deposição de cinzas vulvãnicas em áreas montanhosas.', resposta: false },
-            { texto: 'Pela acumulação de sedimentos no fundo do vulção', resposta: false }
+            { texto: 'Pela acumulação de sedimentos no fundo do vulcão', resposta: false }
         ]
     },
     {
